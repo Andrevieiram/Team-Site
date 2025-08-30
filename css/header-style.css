@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #042275; 
+    background-color:rgba(4, 34, 117, 0.93); 
     color: white;
 
     position: fixed;
