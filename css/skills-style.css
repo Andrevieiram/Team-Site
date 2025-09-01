@@ -6,6 +6,14 @@
   gap: 3rem;
 }
 
+.skills-contact-andre{
+    display: flex;
+    height: 140vh;
+    background: rgba(4, 34, 117, 0.7);
+    padding: 3rem;
+    gap: 3rem;
+}
+
 .skills-left, .contact-right {
   flex: 1;
   display: flex;
