@@ -25,6 +25,7 @@
     width: 300px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .card:hover {
@@ -36,7 +37,7 @@
     height: 150px;
     object-fit: cover; 
     border-radius: 50%; 
-    border: 3px solid rgb(19, 214, 204, 0.4); 
+    border: 3px solid rgba(19, 214, 204, 0.4); 
 }
 
 .card h3 {
@@ -65,4 +66,83 @@
 .card .btn:hover {
     background-color: #05545a;
     color: #fff;
+}
+
+/* ========================= */
+/*        Responsividade     */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .sobre h2 {
+        font-size: 2.2em;
+    }
+
+    .card {
+        width: 260px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .sobre {
+        padding: 40px 15px;
+    }
+
+    .sobre h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%; /* ocupa mais espaço no mobile */
+        max-width: 350px;
+    }
+
+    .card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card h3 {
+        font-size: 1.3em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .sobre {
+        padding: 30px 10px;
+    }
+
+    .sobre h2 {
+        font-size: 1.8em;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card p {
+        font-size: 0.85em;
+    }
+
+    .card .btn {
+        width: 100%; /* botão ocupa toda largura */
+        padding: 12px;
+    }
 }

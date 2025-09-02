@@ -1,17 +1,21 @@
-.hero{
+.hero {
   display: flex;
   height: 100vh;
-  background:rgba(1, 8, 68, 0.7); 
+  background: rgba(1, 8, 68, 0.7); 
 }
 
 .hero-left {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-left img {
   width: 80%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .hero-right {
@@ -55,4 +59,83 @@
   display: block;
   margin-bottom: 0.3rem;
   color: #bfdbfe;
+}
+
+/* ========================= */
+/*        Responsividade     */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero {
+    height: auto;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .hero-left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-right {
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-right h1 {
+    font-size: 2rem;
+  }
+
+  .timeline h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero-right h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-right .description {
+    font-size: 0.95rem;
+  }
+
+  .timeline-line {
+    padding-left: 1rem;
+  }
+
+  .timeline-item span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .hero-right h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-right .description {
+    font-size: 0.85rem;
+  }
+
+  .timeline h2 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-item {
+    font-size: 0.85rem;
+  }
 }
