@@ -16,7 +16,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* permite quebrar só se faltar espaço */
+    flex-wrap: wrap; 
 }
 
 nav ul li a {
@@ -24,7 +24,7 @@ nav ul li a {
     color: white;
     font-weight: 500;
     transition: color 0.3s;
-    white-space: nowrap; /* impede quebra dentro do link */
+    white-space: nowrap; 
 }
 
 nav ul li a:hover {
