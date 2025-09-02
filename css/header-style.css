@@ -3,20 +3,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color:rgba(4, 34, 117, 0.93); 
+    background-color: rgba(4, 34, 117, 0.93);
     color: white;
-
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* permite quebrar só se faltar espaço */
 }
 
 nav ul li a {
@@ -24,8 +24,46 @@ nav ul li a {
     color: white;
     font-weight: 500;
     transition: color 0.3s;
+    white-space: nowrap; /* impede quebra dentro do link */
 }
 
 nav ul li a:hover {
-    color: #2dd7ee; 
+    color: #2dd7ee;
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 6px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 4px;
+    }
 }
