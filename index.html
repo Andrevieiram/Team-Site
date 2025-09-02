@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="/css/sobre-style.css">
         <link rel="stylesheet" href="/css/hero-style.css">
         <link rel="stylesheet" href="/css/skills-style.css">
+        <link rel="stylesheet" href="css/global-contact-form.css">
 
 
     </head>
@@ -25,7 +26,7 @@
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#skills">Skills/Stacks</a></li>
                     <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato ">Contato</a></li>
+                    <li><a href="#globalContactForm">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,7 +35,7 @@
             <div class="home-container">
                 <h1>Bem-vindo à DevTeam</h1>
                 <p>Criamos soluções digitais inteligentes para transformar suas ideias em realidade</p>
-                <a href="#contato" class="btn">Entre em Contato</a>
+                <a href="#globalContactForm" class="btn">Entre em Contato</a>
             </div>
         </section>
     
@@ -73,7 +74,7 @@
         </section>
 
         <!-- Samuel-->
-        <section class="hero">
+        <section class="hero" id="skills">
             <div class="hero-left">
                 <img src="images/equipe/Samuel Soares.jpg" alt="Samuel Soares">
             </div>
@@ -130,10 +131,13 @@
             <div class="contact-right" id="contato">
                 <h2>Entre em contato</h2>
                 <form id="contactForm">
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu email" required>
-                    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    <input type="text" placeholder="Seu nome" class="nome" required>
+                    <p class="erro-nome"></p>
+                    <input type="email" placeholder="Seu email" class="email" required>
+                    <p class="erro-email"></p>
+                    <textarea placeholder="Sua mensagem" rows="5" class="mensagem" required></textarea>
                     <button type="submit">Enviar mensagem</button>
+                    <p class="mensagem-sucesso"></p>
                 </form>
             </div>
         </section>
@@ -193,10 +197,13 @@
             <div class="contact-right" id="contato-alexandre">
                 <h2>Entre em contato</h2>
                 <form id="contactForm-alexandre">
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu email" required>
-                    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    <input type="text" placeholder="Seu nome" class="nome" required>
+                    <p class="erro-nome"></p>
+                    <input type="email" placeholder="Seu email" class="email" required>
+                    <p class="erro-email"></p>
+                    <textarea placeholder="Sua mensagem" rows="5" class="mensagem" required></textarea>
                     <button type="submit">Enviar mensagem</button>
+                    <p class="mensagem-sucesso"></p>
                 </form>
             </div>
         </section>
@@ -265,23 +272,40 @@
             <div class="contact-right" id="contato-andre">
                 <h2>Entre em contato</h2>
                 <form id="contactForm-andre">
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu email" required>
-                    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    <input type="text" placeholder="Seu nome" class="nome" required>
+                    <p class="erro-nome"></p>
+                    <input type="email" placeholder="Seu email" class="email" required>
+                    <p class="erro-email"></p>
+                    <textarea placeholder="Sua mensagem" rows="5" class="mensagem" required></textarea>
                     <button type="submit">Enviar mensagem</button>
+                    <p class="mensagem-sucesso"></p>
                 </form>
             </div>
         </section>
 
     <section class="globalContactForm">
+        <h2>Faça seu projeto conosco!</h2>
         <form id="globalContactForm">
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu email" required>
-            <input type="number" placeholder="Seu telefone" required>
+            <input type="text" placeholder="Seu nome" id="clientName" required>
+            <p class="name-error" ></p>
+            <input type="email" placeholder="Seu email" id="clientEmail" required>
+            <p class="email-error" ></p>
+            <input type="number" placeholder="Seu telefone" id="clientPhone" required>
+            <p class="phone-error" ></p>
             <textarea placeholder="Descreva seu projeto" rows="5" required></textarea>
             <button type="submit">Enviar solicitação</button>
         </form>
+        <p class="global-sucess-message" >
+
+        </p>
     </section>
+    <footer>
+        <p class="copyright-text">
+            Todos os direitos reservados &reg 2025
+        </p>
+    </footer>
+
+    <script src="/js/main.js"></script>
         
     </body>
 </html>
