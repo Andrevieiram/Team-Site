@@ -90,11 +90,7 @@ button:hover {
   transform: scale(1.03);
 }
 
-/* ========================= */
-/*        Responsividade     */
-/* ========================= */
 
-/* Tablets */
 @media (max-width: 1024px) {
   .skills-contact,
   .skills-contact-andre {
@@ -116,7 +112,6 @@ button:hover {
   }
 }
 
-/* Celulares */
 @media (max-width: 768px) {
   .skills-contact,
   .skills-contact-andre {
@@ -146,7 +141,7 @@ button:hover {
   }
 }
 
-/* Celulares pequenos */
+
 @media (max-width: 480px) {
   .skills-left h2,
   .contact-right h2 {
@@ -172,6 +167,6 @@ button:hover {
   }
 
   button {
-    width: 100%; /* botão ocupa toda largura no mobile */
+    width: 100%; 
   }
 }

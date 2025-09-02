@@ -10,7 +10,7 @@
     text-align: center;
     flex-direction: column;
     color: white; 
-    padding: 0 1rem; /* evita texto colado nas bordas em telas pequenas */
+    padding: 0 1rem; 
 }
 
 .home h1 {
@@ -38,11 +38,7 @@
     background-color: #05545a;
 }
 
-/* ========================= */
-/*        Responsividade     */
-/* ========================= */
 
-/* Tablets */
 @media (max-width: 1024px) {
     .home h1 {
         font-size: 2.5em;
@@ -59,10 +55,9 @@
     }
 }
 
-/* Celulares */
 @media (max-width: 768px) {
     .home {
-        height: auto; /* deixa a seção ajustar conforme conteúdo */
+        height: auto; 
         padding: 4rem 1rem;
     }
 
@@ -81,7 +76,6 @@
     }
 }
 
-/* Celulares muito pequenos */
 @media (max-width: 480px) {
     .home h1 {
         font-size: 1.6em;
@@ -92,7 +86,7 @@
     }
 
     .btn {
-        width: 100%; /* botão ocupa toda largura */
+        width: 100%; 
         padding: 12px;
     }
 }

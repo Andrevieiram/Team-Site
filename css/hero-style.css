@@ -61,11 +61,7 @@
   color: #bfdbfe;
 }
 
-/* ========================= */
-/*        Responsividade     */
-/* ========================= */
 
-/* Tablets */
 @media (max-width: 1024px) {
   .hero {
     height: auto;
@@ -98,7 +94,7 @@
   }
 }
 
-/* Celulares */
+
 @media (max-width: 768px) {
   .hero {
     padding: 2rem 1rem;
@@ -121,7 +117,7 @@
   }
 }
 
-/* Celulares pequenos */
+
 @media (max-width: 480px) {
   .hero-right h1 {
     font-size: 1.5rem;
